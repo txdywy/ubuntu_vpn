@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt-get update
 if [ -f /usr/local/bin/pip ] || [ -f /usr/bin/pip ];
 then
     echo "pip exists"
@@ -7,9 +8,10 @@ else
     wget https://bootstrap.pypa.io/get-pip.py
     sudo python get-pip.py
 fi
-sudo apt-get update
+sudo pip install fabric
 sudo apt-get install pptpd
 sudo cp ./pptpd.conf /etc/pptpd.conf
+sudo python setup_chap.py
 sudo cp ./chap-secrets /etc/ppp/chap-secrets
 sudo cp ./pptpd-options /etc/ppp/pptpd-options
 sudo cp ./sysctl.conf /etc/sysctl.conf
