@@ -4,7 +4,8 @@ sudo apt-get install pptpd
 sudo cp ./pptpd.conf /etc/pptpd.conf
 read -p "Please specify your pptp username: " username
 read -p "Please specify your pptp password: " password
-sudo echo $username pptpd $password * >> /etc/ppp/chap-secrets
+sudo echo $username pptpd $password '*' >> ./chap-secrets
+sudo cp ./chap-secrets /etc/ppp/chap-secrets
 sudo cp ./pptpd-options /etc/ppp/pptpd-options
 sudo cp ./sysctl.conf /etc/sysctl.conf
 sudo sysctl -p
