@@ -14,4 +14,11 @@ sudo apt-get install iptables
 sudo iptables -t nat -A POSTROUTING -s 192.168.117.0/24 -o eth0 -j MASQUERADE
 sudo cp ./rc.local /etc/init.d/rc.local
 sudo cp ./ufw /etc/default/ufw
+
+sudo apt-get install vnstat
+sudo vnstat -u -i eth0
+sudo chown -R vnstat:vnstat /var/lib/vnstat
+
+
+
 sudo reboot
