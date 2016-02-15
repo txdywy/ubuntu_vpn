@@ -20,6 +20,8 @@ N/A
 
 p.s. user/password required during the install process
 
+To setup vpn, you just need:
+sh deploy.sh
 
 # ubuntu_squid http proxy
 Need to setup security group for your ec2
@@ -29,3 +31,6 @@ TCP
 0.0.0.0/0
 
 p.s. user/password required during the install process
+
+To setup proxy, you just need:
+sh deploy_squid.sh
