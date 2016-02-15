@@ -19,3 +19,13 @@ N/A
 0.0.0.0/0
 
 p.s. user/password required during the install process
+
+
+# ubuntu_squid http proxy
+Need to setup security group for your ec2
+Custom TCP Rule
+TCP
+3128
+0.0.0.0/0
+
+p.s. user/password required during the install process
