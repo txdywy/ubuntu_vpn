@@ -1,8 +1,9 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install -y squid
+sudo apt-get install -y apache2-utils
 read -p "Please specify your http proxy username: " username
-sudo htpasswd -c /etc/squid3/passwords echo $username
+sudo htpasswd -c /etc/squid3/passwords $username
 sudo cp ./squid.conf /etc/squid3/.
 sudo service squid3 restart
 
