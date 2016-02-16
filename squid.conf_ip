@@ -1,0 +1,8 @@
+#auth_param basic program /usr/lib/squid3/basic_ncsa_auth /etc/squid3/passwords
+#auth_param basic realm proxy
+#acl authenticated proxy_auth REQUIRED
+acl user src 0.0.0.0/24
+http_access allow user
+
+# Choose the port you want. Below we set it to default 3128.
+http_port 3128
