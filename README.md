@@ -34,3 +34,21 @@ p.s. user/password required during the install process
 
 To setup proxy, you just need:
 sh deploy_squid.sh
+
+# ubuntu_node http-proxy
+Need to setup security group for your ec2
+Custom TCP Rule
+TCP
+8888
+0.0.0.0/0
+
+port 8888 was default in http.js, change it to anyone if you prefer and remember setup the firewall
+
+p.s. no auth required with node; http/https worked fine
+
+To setup proxy, you just need:
+./start_8888
+Just remember to stop it by:
+./stop_8888
+
+node process management by pm2
