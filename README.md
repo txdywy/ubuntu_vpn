@@ -52,3 +52,10 @@ Just remember to stop it by:
 ./stop_8888
 
 node process management by pm2
+
+# ubuntu_python http(s) proxy
+Get a free port e.g. 8888
+python proxy.py --hostname 0.0.0.0 --port 8888
+
+proxy.py [-h] [--hostname HOSTNAME] [--port PORT]
+                [--log-level LOG_LEVEL
