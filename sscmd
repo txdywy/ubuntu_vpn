@@ -1,0 +1,4 @@
+sudo ssserver -c ss.json -d start
+sudo ssserver -c ss.json -d stop
+
+sudo ssserver -d stop
