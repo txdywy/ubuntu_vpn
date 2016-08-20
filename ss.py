@@ -9,6 +9,7 @@ d = {"server":"0.0.0.0",
      "method":"aes-256-cfb",
      "fast_open":False
     }
+print 'Please input your ss password:'
 p = sys.stdin.readline().strip()
 d['password'] = p
 t = json.dumps(d)
