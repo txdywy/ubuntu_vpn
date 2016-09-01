@@ -69,4 +69,4 @@ TCP
 
 To setup shadowsocks, you just need:
 sh ss.sh
-----
+--
