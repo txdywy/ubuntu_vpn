@@ -59,3 +59,12 @@ python proxy.py --hostname 0.0.0.0 --port 8888
 
 proxy.py [-h] [--hostname HOSTNAME] [--port PORT]
                 [--log-level LOG_LEVEL
+
+# shadowsocks proxy
+Need to setup security group for your ec2
+Custom TCP Rule
+TCP
+8388
+0.0.0.0/0
+To setup shadowsocks, you just need:
+sh ss.sh
