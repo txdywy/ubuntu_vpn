@@ -6,8 +6,7 @@ read -p "Please specify your ikev2 pass: " pass
 sudo echo : PSK $pass > ./ipsec.secrets
 sudo cp ./ipsec.secrets /etc/.
 sudo apt-get install iptables
-sudo su
-sh ./ikev2_ip.sh
+sudo sh ./ikev2_ip.sh
 sudo ipsec restart
 
 sudo apt-get install vnstat
