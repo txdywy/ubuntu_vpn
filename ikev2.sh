@@ -5,6 +5,7 @@ sudo cp ./ipsec.conf /etc/ipsec.conf
 read -p "Please specify your ikev2 pass: " pass
 sudo echo : PSK $pass > ./ipsec.secrets
 sudo cp ./ipsec.secrets /etc/.
+sudo cp ./strongswan.conf /etc/.
 sudo apt-get install iptables
 sudo sh ./ikev2_ip.sh
 sudo ipsec restart
