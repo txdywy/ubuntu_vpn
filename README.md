@@ -70,3 +70,20 @@ TCP
 To setup shadowsocks, you just need:
 sh ss.sh
 
+# IKEv2 vpn
+Need to setup security group for your ec2
+Custom UDP Rule
+UDP
+500
+0.0.0.0/0
+
+Custom UDP Rule
+UDP
+4500
+0.0.0.0/0
+
+To setup ikev2 vpn, you just need:
+sh ikev2.sh
+input your pass as the PSK(remote id is coded as "vpn")
+
+
