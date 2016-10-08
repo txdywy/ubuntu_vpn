@@ -97,9 +97,8 @@ UDP
 4500
 0.0.0.0/0
 ```
-To setup ikev2 vpn, you just need(~root user required~):
+To setup ikev2 vpn, you just need(~~root user required~~):
 ```shell
-~sudo su~
 sh ikev2.sh
 ```
 input your pass as the PSK(remote id is coded as "vpn")
