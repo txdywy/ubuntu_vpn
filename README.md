@@ -53,6 +53,13 @@ port 8888 was default in http.js, change it to anyone if you prefer and remember
 
 p.s. no auth required with node; http/https worked fine
 
+Env required
+```
+sudo apt-get install npm nodejs
+sudo cp /usr/bin/nodejs /usr/bin/node
+sudo npm install pm2 -g
+cd ~/ubuntu_vpn/; npm install http-proxy
+```
 To setup proxy, you just need:
 ```
 ./start_8888
