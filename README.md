@@ -98,7 +98,7 @@ socks5:127.0.0.1:1080
 For http conversion(Nac)
 ```
 brew install polipo
-polipo socksParentProxy=localhost:1080
+polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
 ```
 Established listening socket on port 8123.
 A local http proxy at 127.0.0.1:8123 is hosted
