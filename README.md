@@ -86,10 +86,23 @@ TCP
 8388
 0.0.0.0/0
 ```
-To setup shadowsocks, you just need:
+To setup shadowsocks on server, you just need:
 ```
 sh ss.sh
 ```
+For client side you need a client app like ShadowsocksX for Mac
+It will provide a socks5 proxy at client side as 
+```
+socks5:127.0.0.1:1080 
+```
+For http conversion(Nac)
+```
+brew install polipo
+polipo socksParentProxy=localhost:1080
+```
+Established listening socket on port 8123.
+A local http proxy at 127.0.0.1:8123 is hosted
+
 # IKEv2 vpn
 Need to setup security group for your ec2
 ```
