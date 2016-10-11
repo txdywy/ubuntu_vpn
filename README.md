@@ -112,6 +112,11 @@ TCP
 1287
 0.0.0.0/0
 ```
+To setup shadowsocks on server by pproxy, you just need:
+```
+sh ppxy.sh
+```
+It will install python3.6
 
 # IKEv2 vpn
 Need to setup security group for your ec2
