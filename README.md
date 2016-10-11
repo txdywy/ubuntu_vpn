@@ -105,7 +105,13 @@ A local http proxy at 127.0.0.1:8123 is hosted
 
 # shadowsocks by pproxy
 Python3.6 required
-
+Need to setup security group for your ec2
+```
+Custom TCP Rule
+TCP
+1287
+0.0.0.0/0
+```
 
 # IKEv2 vpn
 Need to setup security group for your ec2
