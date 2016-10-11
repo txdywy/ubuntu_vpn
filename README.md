@@ -95,13 +95,17 @@ It will provide a socks5 proxy at client side as
 ```
 socks5:127.0.0.1:1080 
 ```
-For http conversion(Nac)
+For socks2http conversion(Mac)
 ```
 brew install polipo
 polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
 ```
 Established listening socket on port 8123.
 A local http proxy at 127.0.0.1:8123 is hosted
+
+# shadowsocks by pproxy
+Python3.6 required
+
 
 # IKEv2 vpn
 Need to setup security group for your ec2
