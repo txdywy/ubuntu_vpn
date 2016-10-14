@@ -116,6 +116,11 @@ To setup shadowsocks on server by pproxy, you just need:
 ```
 sh ppxy.sh
 ```
+For mac user, make sure openssl installed and add there before make:
+```
+export CPPFLAGS=-I$(brew --prefix openssl)/include
+export LDFLAGS=-L$(brew --prefix openssl)/lib
+```
 It will install python3.6
 
 # IKEv2 vpn
