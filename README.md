@@ -121,6 +121,8 @@ For mac user, make sure openssl installed and add there before make:
 export CPPFLAGS=-I$(brew --prefix openssl)/include
 export LDFLAGS=-L$(brew --prefix openssl)/lib
 ```
+Run ```xcode-select --install``` to fix installation of Command Line Tools for Xcode working.
+
 It will install python3.6
 
 # IKEv2 vpn
