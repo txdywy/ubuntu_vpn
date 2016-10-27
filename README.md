@@ -153,5 +153,6 @@ For macOS，brew install sshuttle(python, use pip instead)
 sudo sshuttle --dns -r user@server_ip 0.0.0.0/0
 ```
 It required sudo password first, then ssh pass. And thats all, all traffic(TPC) goes over ssh.
+For macOS user, if you want to access your ssh config, make sure copy your ssh config and keys from user home to /var/root/.ssh/ which makes sudo work.
 
 
