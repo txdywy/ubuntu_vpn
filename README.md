@@ -113,8 +113,8 @@ Proxifier is a all traffic proxy client solution on Windows and Mac(unstable)
 ProxyChains-ng for mac (https://github.com/rofl0r/proxychains-ng) works with shell
 
 For linux/shell user, ssh over nc is another solution.
+(https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts#ProxyCommand_with_Netcat)
 ```
-https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts#ProxyCommand_with_Netcat
 ssh -o ProxyCommand="nc -X 5 -x localhost:9150 %h %p" server.example.org
 ```
 
