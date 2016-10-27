@@ -90,7 +90,7 @@ To setup shadowsocks on server, you just need:
 ```
 sh ss.sh
 ```
-For client side you need a client app like ShadowsocksX for Mac
+For client side you need a client app like ShadowsocksX-ng for Mac(1.3.1 latest)
 It will provide a socks5 proxy at client side as 
 ```
 socks5:127.0.0.1:1080 
@@ -102,6 +102,8 @@ polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
 ```
 Established listening socket on port 8123.
 A local http proxy at 127.0.0.1:8123 is hosted
+
+Proxifier is a all traffic proxy client solution on Windows and Mac(unstable) 
 
 # shadowsocks by pproxy
 Python3.6 required
