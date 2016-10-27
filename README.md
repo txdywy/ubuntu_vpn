@@ -100,10 +100,23 @@ For socks2http conversion(Mac)
 brew install polipo
 polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0
 ```
+```
+$ export http_proxy=http://polipo.example.org:8123
+$ export https_proxy=http://polipo.example.org:8123
+$ export RSYNC_PROXY=polipo.example.org:8123
+```
 Established listening socket on port 8123.
 A local http proxy at 127.0.0.1:8123 is hosted
 
 Proxifier is a all traffic proxy client solution on Windows and Mac(unstable) 
+
+ProxyChains-ng for mac (https://github.com/rofl0r/proxychains-ng) works with shell
+
+For linux/shell user, ssh over nc is another solution.
+```
+https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts#ProxyCommand_with_Netcat
+ssh -o ProxyCommand="nc -X 5 -x localhost:9150 %h %p" server.example.org
+```
 
 # shadowsocks by pproxy
 Python3.6 required
