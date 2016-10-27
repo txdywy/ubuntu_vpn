@@ -145,4 +145,13 @@ sh ikev2.sh
 ```
 input your pass as the PSK(remote id is coded as "vpn")
 
+# sshuttle
+sshuttle is called poor's VPN
+A ssh account is required ans just it for server side
+For macOS，brew install sshuttle(python, use pip instead)
+```
+sudo sshuttle --dns -r user@server_ip 0.0.0.0/0
+```
+It required sudo password first, then ssh pass. And thats all, all traffic(TPC) goes over ssh.
+
 
