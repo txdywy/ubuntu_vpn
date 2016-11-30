@@ -138,6 +138,16 @@ export LDFLAGS=-L$(brew --prefix openssl)/lib
 ```
 Run ```xcode-select --install``` to fix installation of Command Line Tools for Xcode working.
 
+For ubuntu:
+```
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
+```
+More linux reference go to:
+```
+https://github.com/yyuu/pyenv/wiki/Common-build-problems
+```
+
 It will install python3.6
 
 # IKEv2 vpn
