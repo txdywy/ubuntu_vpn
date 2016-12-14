@@ -5,8 +5,18 @@ then
 else
     echo "Installing pip"
     wget https://bootstrap.pypa.io/get-pip.py
-    sudo python get-pip.py
+    if [ -f /usr/bin/python ];
+    then
+        sudo python get-pip.py
+    else
+        sudo python3 get-pip.py
+    fi
 fi
 sudo pip install shadowsocks
-python ss.py
+if [ -f /usr/bin/python ];
+then
+    python ss.py
+else
+    python3 ss.py
+fi
 sudo ssserver -c ss.json -d start
