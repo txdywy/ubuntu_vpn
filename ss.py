@@ -1,5 +1,6 @@
 import sys
 import json
+from pprint import pprint
 
 d = {"server":"0.0.0.0",
      "server_port":8388,
@@ -9,10 +10,10 @@ d = {"server":"0.0.0.0",
      "method":"aes-256-cfb",
      "fast_open":False
     }
-print 'Please input your ss password:'
+pprint('Please input your ss password:')
 p = sys.stdin.readline().strip()
 d['password'] = p
 t = json.dumps(d)
-print t
+pprint(t)
 with open('ss.json', 'w') as f:
     f.write(t)
