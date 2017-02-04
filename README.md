@@ -180,4 +180,5 @@ sudo sshuttle --dns -r user@server_ip 0.0.0.0/0
 It required sudo password first, then ssh pass. And thats all, all traffic(TCP) goes over ssh.
 For macOS user, if you want to access your ssh config, make sure copy your ssh config and keys from user home to /var/root/.ssh/ which makes sudo work. This solution is safe to your traffic which is ssh encryption ensured but download speed is not as fast as ss.
 
-
+# lets encrypt
+https://github.com/txdywy/scripts/blob/f94e20080aa24719d4001a0b3b9f946b7334ecec/lets-encrypt/README-CN.md
