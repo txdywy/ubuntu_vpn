@@ -182,3 +182,6 @@ For macOS user, if you want to access your ssh config, make sure copy your ssh c
 
 # lets encrypt
 https://github.com/txdywy/scripts/blob/f94e20080aa24719d4001a0b3b9f946b7334ecec/lets-encrypt/README-CN.md
+
+# scp/rsync 
+rsync -P --rsh=ssh hk:~/android-studio-ide-162.3764568-linux.zip .
