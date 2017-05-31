@@ -149,6 +149,7 @@ https://github.com/yyuu/pyenv/wiki/Common-build-problems
 ```
 
 It will install python3.6
+ e.g. pproxy -i ss://aes-256-cfb:pass@:port -vv
 
 # IKEv2 vpn
 Need to setup security group for your ec2
