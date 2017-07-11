@@ -186,3 +186,23 @@ https://github.com/txdywy/scripts/blob/f94e20080aa24719d4001a0b3b9f946b7334ecec/
 
 # scp/rsync 
 rsync -P --rsh=ssh hk:~/android-studio-ide-162.3764568-linux.zip .
+
+# install python 2
+First, install some dependencies:
+
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+Then download using the following command:
+
+version=2.7.13
+cd ~/Downloads/
+wget https://www.python.org/ftp/python/$version/Python-$version.tgz
+Extract and go to the directory:
+
+tar -xvf Python-$version.tgz
+cd Python-$version
+Now, install using the command you just tried, using checkinstall instead to make it easier to uninstall if needed:
+
+./configure
+make
+sudo checkinstall
