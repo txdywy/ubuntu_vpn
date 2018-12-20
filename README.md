@@ -10,6 +10,11 @@ install pproxy
 pip3 install pproxy[accelerated]
 ```
 
+pproxy cmd
+```
+pproxy -vv -l ss://encrypt:pass@:port -ul ss://encrypt:pass@:port
+```
+
 # ubuntu_vpn
 setup ubuntu vpc to support vpn via pptp, especially on aws ec2 ubuntu14.04 hvm
 
