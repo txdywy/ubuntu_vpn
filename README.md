@@ -1,3 +1,15 @@
+# setup new vpc
+startup bbr
+```
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+
+```
+
+install pproxy
+```
+pip3 install pproxy[accelerated]
+```
+
 # ubuntu_vpn
 setup ubuntu vpc to support vpn via pptp, especially on aws ec2 ubuntu14.04 hvm
 
