@@ -158,7 +158,8 @@ Run ```xcode-select --install``` to fix installation of Command Line Tools for X
 For ubuntu:
 ```
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils \
+libgdbm-dev libc6-dev openssl libffi-dev
 ```
 More linux reference go to:
 ```
