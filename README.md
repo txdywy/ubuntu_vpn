@@ -229,3 +229,13 @@ Now, install using the command you just tried, using checkinstall instead to mak
 make
 sudo checkinstall
 ```
+
+# ubuntu with old source
+https://ubuntuforums.org/showthread.php?t=2382832
+```
+## EOL upgrade sources.list
+# Required
+deb http://old-releases.ubuntu.com/ubuntu/ zesty main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ zesty-updates main restricted universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ zesty-security main restricted universe multiverse
+```
