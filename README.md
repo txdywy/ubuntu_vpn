@@ -239,3 +239,9 @@ deb http://old-releases.ubuntu.com/ubuntu/ zesty main restricted universe multiv
 deb http://old-releases.ubuntu.com/ubuntu/ zesty-updates main restricted universe multiverse
 deb http://old-releases.ubuntu.com/ubuntu/ zesty-security main restricted universe multiverse
 ```
+
+#Install pyenv
+https://github.com/pyenv/pyenv-installer
+```
+$ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
