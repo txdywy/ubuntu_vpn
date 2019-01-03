@@ -245,3 +245,8 @@ https://github.com/pyenv/pyenv-installer
 ```
 $ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 ```
+
+# Set Permanently ulimit -n / open files in ubuntu
+```
+https://medium.com/@muhammadtriwibowo/set-permanently-ulimit-n-open-files-in-ubuntu-4d61064429a
+```
