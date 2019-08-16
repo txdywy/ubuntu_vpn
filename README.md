@@ -249,3 +249,13 @@ $ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installe
 # Set Permanently ulimit -n / open files in ubuntu
 https://medium.com/@muhammadtriwibowo/set-permanently-ulimit-n-open-files-in-ubuntu-4d61064429a
 
+# Docker
+```
+sudo docker run -d \
+    -e 'PASSWORD=xxxxxxxx' \
+    -e 'METHOD=chacha20-ietf-poly1305' \
+    -e 'ARGS=--plugin obfs-server --plugin-opts obfs=http;failover=ms.com' \
+    -p 6792:6792/tcp -p 6792:6792/udp \
+    chenhw2/ss-obfs
+```
+
