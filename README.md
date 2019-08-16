@@ -256,6 +256,6 @@ sudo docker run -d \
     -e 'METHOD=chacha20-ietf-poly1305' \
     -e 'ARGS=--plugin obfs-server --plugin-opts obfs=http;failover=ms.com' \
     -p 6792:6792/tcp -p 6792:6792/udp \
-    chenhw2/ss-obfs
+    txdywy/ss-obfs
 ```
 
