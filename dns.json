@@ -1,0 +1,43 @@
+{
+
+	"log" : {
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log",
+    "loglevel": "debug"
+  },
+
+"dns": {
+  "servers": [
+      "1.1.1.1",
+      {
+        "address": "114.114.114.114",
+        "port": 53,
+        "domains": ["geosite:cn"]
+      },
+      "localhost"
+  ]
+},
+
+"inbound": {
+  "port": 1153,
+  "tag": "dns-in",
+  "protocol": "dokodemo-door",
+  "settings": {
+    "address": "1.1.1.1",
+    "port": 53,
+    "network": "tcp,udp" // 是的，同时支持 TCP 和 UDP 流量，加了 TLS 之后还可以支持 DoT
+  }
+},
+
+"outbound": {
+  "protocol": "dns",
+  "tag": "dns-out"
+},
+
+"routing": {
+  "type": "field",
+  "inboundTag": ["dns-in"],
+  "outboundTag": "dns-out"
+}
+
+}
