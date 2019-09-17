@@ -259,3 +259,11 @@ sudo docker run -d \
     txdywy/ss-obfs
 ```
 
+# iptables
+```
+sudo iptables -t nat -A PREROUTING -p tcp --dport LOCAL_PORT -j DNAT --to REMOTE_IP:REMOTE_PORT
+sudo iptables -t nat -A POSTROUTING -d REMOTE_IP -p tcp --dport LOCAL_PORT -j MASQUERADE
+sudo iptables-save > firewall.txt
+sudo iptables -t nat -L
+```
+
