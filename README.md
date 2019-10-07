@@ -267,3 +267,5 @@ sudo iptables-save > firewall.txt
 sudo iptables -t nat -L
 ```
 
+# openVPN
+https://github.com/Nyr/openvpn-install
