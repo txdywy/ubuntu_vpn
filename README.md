@@ -269,3 +269,4 @@ sudo iptables -t nat -L
 
 # openVPN
 https://github.com/Nyr/openvpn-install
+https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks
