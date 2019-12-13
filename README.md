@@ -278,3 +278,15 @@ https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowso
 https://github.com/pexcn/daily
 https://github.com/pexcn/daily/raw/gh-pages/pac/whitelist.pac
 ```
+
+# Caddy for Lets Envrypt
+```
+c.xxxx86.com
+{
+  log ./caddy.log
+  proxy /ray localhost:10000 {
+    websocket
+    header_upstream -Origin
+  }
+}
+```
