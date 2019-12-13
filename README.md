@@ -279,7 +279,7 @@ https://github.com/pexcn/daily
 https://github.com/pexcn/daily/raw/gh-pages/pac/whitelist.pac
 ```
 
-# Caddy for Lets Envrypt
+# Caddy for Lets Encrypt
 ```
 c.xxxx86.com
 {
@@ -289,4 +289,9 @@ c.xxxx86.com
     header_upstream -Origin
   }
 }
+```
+
+# Gost
+```
+sudo ./gost -L "http2://user:pass@:443?cert=/home/user/.caddy/acme/acme-v02.api.letsencrypt.org/sites/c.x86.com/c.x86.com.crt&key=/home/user/.caddy/acme/acme-v02.api.letsencrypt.org/sites/c.x86.com/c.x86.com.key&&probe_resist=code:404"
 ```
