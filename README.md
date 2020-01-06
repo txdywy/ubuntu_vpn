@@ -295,3 +295,16 @@ c.xxxx86.com
 ```
 sudo ./gost -L "http2://user:pass@:443?cert=/home/user/.caddy/acme/acme-v02.api.letsencrypt.org/sites/c.x86.com/c.x86.com.crt&key=/home/user/.caddy/acme/acme-v02.api.letsencrypt.org/sites/c.x86.com/c.x86.com.key&&probe_resist=code:404"
 ```
+
+# Issue a cert for TLS and QUIC
+```
+curl https://get.acme.sh | sh
+~/.acme.sh/acme.sh --issue --dns dns_cf -d mydomain.me
+```
+(root required --force)
+
+```
+export CF_Email="2017@gmail.com"
+export CF_Key="xxxxxxxa"
+```
+Cloudflare Required Keys
