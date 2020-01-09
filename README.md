@@ -308,3 +308,8 @@ export CF_Email="2017@gmail.com"
 export CF_Key="xxxxxxxa"
 ```
 Cloudflare Required Keys
+
+# tcpdump for checking network
+```
+sudo tcpdump -vvv -n port xxxxx
+```
