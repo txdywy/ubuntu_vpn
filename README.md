@@ -322,3 +322,8 @@ cp server.key server.key.org
 openssl rsa -in server.key.org -out server.key
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 ```
+
+# Python3 Simple HTTP Server
+```
+python3 -m http.server 8000 --bind 127.0.0.1
+```
