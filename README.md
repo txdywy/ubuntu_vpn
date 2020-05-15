@@ -327,3 +327,8 @@ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 ```
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
+
+# one cert
+```
+https://github.com/flotwig/the-one-cert
+```
