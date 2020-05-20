@@ -328,7 +328,18 @@ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-# one cert
+# One Cert
 ```
 https://github.com/flotwig/the-one-cert
+```
+
+# SEAP MEM
+```
+https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo vim /etc/fstab
++   /swapfile swap swap defaults 0 0
 ```
