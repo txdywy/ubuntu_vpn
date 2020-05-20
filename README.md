@@ -202,8 +202,10 @@ For macOS user, if you want to access your ssh config, make sure copy your ssh c
 # lets encrypt
 https://github.com/txdywy/scripts/blob/f94e20080aa24719d4001a0b3b9f946b7334ecec/lets-encrypt/README-CN.md
 
-# scp/rsync 
+# scp/rsync
+```
 rsync -P --rsh=ssh hk:~/android-studio-ide-162.3764568-linux.zip .
+```
 
 # install python 2
 First, install some dependencies:
@@ -268,16 +270,12 @@ sudo iptables -t nat -L
 ```
 
 # openVPN
-```
 https://github.com/Nyr/openvpn-install
 https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks
-```
 
 # PAC Daily
-```
 https://github.com/pexcn/daily
 https://github.com/pexcn/daily/raw/gh-pages/pac/whitelist.pac
-```
 
 # Caddy for Lets Encrypt
 ```
@@ -329,13 +327,12 @@ python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 # One Cert
-```
 https://github.com/flotwig/the-one-cert
-```
 
-# SEAP MEM
-```
+
+# SWAP MEM
 https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
+```
 sudo fallocate -l 2G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
