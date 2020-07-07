@@ -314,7 +314,7 @@ sudo tcpdump -vvv -n port xxxxx
 
 # Self signed key/cer
 ```
-openssl genrsa -des3 -out server.key 1024
+openssl genrsa -des3 -out server.key 2048
 openssl req -new -key server.key -out server.csr
 cp server.key server.key.org
 openssl rsa -in server.key.org -out server.key
