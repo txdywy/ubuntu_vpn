@@ -340,3 +340,10 @@ sudo swapon /swapfile
 sudo vim /etc/fstab
 +   /swapfile swap swap defaults 0 0
 ```
+
+# iptables
+```
+iptables --append INPUT --protocol tcp --dport 9999 --jump DROP
+iptables --append INPUT --protocol tcp --src 1.1.1.1/24 --dport 9999 --jump ACCEPT
+
+```
