@@ -343,10 +343,10 @@ sudo vim /etc/fstab
 
 # iptables
 ```
-iptables --append INPUT --protocol tcp --src 103.69.152.226/24 --dport 9999 --jump ACCEPT
-iptables --append INPUT --protocol tcp --src 117.136.0.239/24 --dport 9999 --jump ACCEPT
-iptables --append INPUT --protocol tcp --src 223.104.3.53/24 --dport 9999 --jump ACCEPT
-iptables --append INPUT --protocol tcp --dport 9999 --jump DROP
+iptables -I INPUT 1 --protocol tcp --src 103.69.152.226/24 --dport 8880 --jump ACCEPT
+iptables -I INPUT 1 --protocol tcp --src 117.136.0.239/8 --dport 8880 --jump ACCEPT
+iptables -I INPUT 1 --protocol tcp --src 223.104.3.53/24 --dport 8880 --jump ACCEPT
+iptables -A INPUT --protocol tcp --dport 8880 --jump DROP
 
 
 ```
