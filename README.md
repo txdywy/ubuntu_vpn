@@ -270,8 +270,21 @@ sudo iptables -t nat -L
 ```
 
 # openVPN
+```
 https://github.com/Nyr/openvpn-install
 https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks
+```
+Official Mac Client is trash, does not support socks-proxy
+pproxy socks casued mtu err
+
+TunnelBlick:
+https://tunnelblick.net/
+
+```
+socks-proxy 127.0.0.1 1080
+route SHADOWSOCKS_SERVER_IP 255.255.255.255 net_gateway
+```
+net_gateway means ip excluded
 
 # PAC Daily
 https://github.com/pexcn/daily
