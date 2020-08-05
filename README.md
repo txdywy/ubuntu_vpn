@@ -270,10 +270,12 @@ sudo iptables -t nat -L
 ```
 
 # openVPN
-```
+OpenVPN one-click scripte:
 https://github.com/Nyr/openvpn-install
+
+Client socks proxy tunnel extra config:
 https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks
-```
+
 Official Mac Client is trash, does not support socks-proxy
 pproxy socks casued mtu err
 
