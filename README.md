@@ -276,8 +276,8 @@ https://github.com/Nyr/openvpn-install
 Client socks proxy tunnel extra config:
 https://github.com/shadowsocks/shadowsocks/wiki/Connect-to-OpenVPN-over-Shadowsocks
 
-Official Mac Client is trash, does not support socks-proxy
-pproxy socks casued mtu err
+Official Mac Client is trash, does not support socks-proxy.
+(pproxy socks may cause peer mtu err)
 
 TunnelBlick:
 https://tunnelblick.net/
