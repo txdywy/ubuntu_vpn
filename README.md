@@ -362,6 +362,13 @@ iptables -I INPUT 1 --protocol tcp --src 103.69.152.226/24 --dport 8880 --jump A
 iptables -I INPUT 1 --protocol tcp --src 117.136.0.239/8 --dport 8880 --jump ACCEPT
 iptables -I INPUT 1 --protocol tcp --src 223.104.3.53/24 --dport 8880 --jump ACCEPT
 iptables -A INPUT --protocol tcp --dport 8880 --jump DROP
-
-
 ```
+
+# wireguard
+GCP:
+```
+apt install resolvconf
+wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install_ubuntu.sh && chmod +x wireguard_install_ubuntu.sh && ./wireguard_install_ubuntu.sh
+```
+random port#
+
