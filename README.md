@@ -374,3 +374,7 @@ random port#
 
 # vless
 https://github.com/v2fly/v2ray-examples
+
+
+# koolshare
+https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64
