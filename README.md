@@ -290,7 +290,10 @@ net_gateway means ip excluded
 
 # PAC Daily
 https://github.com/pexcn/daily
+
 https://github.com/pexcn/daily/raw/gh-pages/pac/whitelist.pac
+
+chrome extension switch
 
 # Caddy for Lets Encrypt
 ```
