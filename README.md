@@ -381,3 +381,8 @@ https://github.com/v2fly/v2ray-examples
 
 # koolshare
 https://github.com/hq450/fancyss_history_package/tree/master/fancyss_X64
+
+# check self-signed cert
+```
+curl -svo /dev/null --resolve hk06.hackx86.com:2087:35.241.92.190 https://hk06.hackx86.com:2087/
+```
