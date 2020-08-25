@@ -392,3 +392,15 @@ https://github.com/yeahwu/kinto
 
 # ibm lite
 https://github.com/CCChieh/IBMYes
+
+# iptables ttl
+```
+iptables -A INPUT -m ttl --ttl-gt 80 -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT -s 117.0.0.0/8 -j ACCEPT
+iptables -A INPUT -s 219.143.155.0/24 -j ACCEPT
+iptables -A INPUT -s 223.104.3.0/24 -j ACCEPT
+iptables -I INPUT -s 122.97.175.243/24 -j ACCEPT
+iptables -A INPUT -j DROP    
+```
