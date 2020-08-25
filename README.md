@@ -407,3 +407,8 @@ iptables -A INPUT -s 223.104.3.0/24 -j ACCEPT
 iptables -I INPUT -s 122.97.175.243/24 -j ACCEPT
 iptables -A INPUT -j DROP    
 ```
+add log at /var/log/kern.log
+```
+sudo iptables -I INPUT 5 -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
+```
+
