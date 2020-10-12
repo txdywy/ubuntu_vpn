@@ -413,6 +413,7 @@ sudo iptables -I INPUT 5 -m limit --limit 5/min -j LOG --log-prefix "iptables de
 ```
 
 # gost
+https://github.com/ginuerzh/gost/releases/tag/v2.11.1
 ```
 gost -L=ss+ws://aes-128-gcm:q1@:80?path=/
 ```
