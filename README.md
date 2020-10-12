@@ -412,3 +412,7 @@ add log at /var/log/kern.log
 sudo iptables -I INPUT 5 -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
 ```
 
+# gost
+```
+gost -L=ss+ws://aes-128-gcm:q1@:80?path=/
+```
