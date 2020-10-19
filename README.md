@@ -417,3 +417,10 @@ https://github.com/ginuerzh/gost/releases/tag/v2.11.1
 ```
 gost -L=ss+ws://aes-128-gcm:q1@:80?path=/
 ```
+
+# bbr & +
+```
+wget --no-check-certificate -O tcp.sh https://github.com/cx9208/Linux-NetSpeed/raw/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+sysctl net.ipv4.tcp_congestion_control
+```
