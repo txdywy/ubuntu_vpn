@@ -424,3 +424,8 @@ wget --no-check-certificate -O tcp.sh https://github.com/cx9208/Linux-NetSpeed/r
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 sysctl net.ipv4.tcp_congestion_control
 ```
+
+# v2fly install
+```
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+```
