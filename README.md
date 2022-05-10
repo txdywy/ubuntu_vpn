@@ -437,3 +437,69 @@ sudo iptables -P FORWARD ACCEPT
 sudo iptables -P OUTPUT ACCEPT
 sudo iptables -F
 ```
+
+# wordpress init
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install apache2 apache2-utils 
+
+sudo systemctl enable apache2
+sudo systemctl start apache2
+sudo systemctl status apache2
+
+sudo ufw allow in "Apache"
+sudo ufw status
+
+
+sudo apt-get install mysql-client mysql-server
+
+sudo mysql -u root
+
+USE mysql;
+UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+
+sudo systemctl restart mysql.service
+
+sudo mysql_secure_installation
+
+sudo apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip 
+
+
+sudo systemctl restart apache2
+
+
+wget -c http://wordpress.org/latest.tar.gz
+tar -xzvf latest.tar.gz
+
+sudo mv wordpress/* /var/www/html/
+
+
+sudo chown -R www-data:www-data /var/www/html/
+sudo chmod -R 755 /var/www/html/
+
+sudo mysql -u root -p 
+
+CREATE DATABASE wp_myblog;
+
+cd /var/www/html/
+sudo mv wp-config-sample.php wp-config.php
+sudo rm -rf index.html
+
+sudo systemctl restart apache2.service 
+sudo systemctl restart mysql.service 
+```
+
+
+
+
+
+
+
+
+
+
+
+
