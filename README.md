@@ -508,6 +508,16 @@ sudo sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-relea
 wget -N -O /root/singbox.sh https://raw.githubusercontent.com/TinrLin/sing-box/main/Install.sh && chmod +x /root/singbox.sh && ln -sf /root/singbox.sh /usr/local/bin/singbox && bash /root/singbox.sh
 ```
 
-
+# geosite google
+```
+domain:googleapis.cn
+domain:googleapis.com
+domain:xn--ngstr-lra8j.com
+geosite:google
+geosite:google@cn
+domain:services.googleapis.cn
+domain:googlevideo.com
+geosite:youtube
+```
 
 
